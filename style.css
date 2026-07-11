@@ -170,3 +170,31 @@ section strong {
     border-left: 6px solid #f39c12;
     padding-left: 15px;
 }
+
+.resource-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #1f2d3d;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.legend-badge {
+    font-size: 1.5rem;
+}
+
+.legend-item strong {
+    color: #f39c12;
+}
+
+.legend-item p {
+    margin: 5px 0 0 0;
+}
+
