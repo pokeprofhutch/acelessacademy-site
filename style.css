@@ -106,3 +106,14 @@ li {
     margin-bottom: 10px;
     line-height: 1.6;
 }
+
+p {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+section p,
+section ul,
+section ol {
+    max-width: 900px;
+}
