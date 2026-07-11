@@ -21,17 +21,16 @@ header {
 }
 
 h1 {
-    color: #3c2f1d;
+    color: #f39c12;
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
 h2 {
-    color: #4f3f28;
-    border-bottom: 2px solid #c9b27d;
+    color: #f39c12;
+    border-bottom: 2px solid #f39c12;
     padding-bottom: 5px;
 }
-
 nav {
     background: #1b2633;
     padding: 15px;
