@@ -46,12 +46,14 @@ nav {
 }
 
 nav a {
+    display: inline-block;
     text-decoration: none;
-    margin: 0 18px;
-    padding: 8px 12px;
+    margin: 0 10px;
+    padding: 10px 18px;
     font-weight: bold;
     color: #e8edf2;
-    border-radius: 6px;
+    background-color: #2f5275;
+    border-radius: 8px;
     transition: 0.2s;
 }
 
@@ -59,7 +61,6 @@ nav a:hover {
     background-color: #f39c12;
     color: #111c2e;
 }
-
 nav a.active {
     background-color: #f39c12;
     color: #111c2e;
