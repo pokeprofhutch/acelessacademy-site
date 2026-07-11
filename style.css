@@ -262,6 +262,17 @@ section li a:hover {
 
     h2 {
         font-size: 1.5rem;
+    }    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    li {
+        margin-bottom: 12px;
+    }
+
+    section li a {
+        padding: 6px 8px;
     }
 
 }
