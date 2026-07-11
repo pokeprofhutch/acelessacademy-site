@@ -230,3 +230,9 @@ section li a:hover {
     color: #111c2e;
 }
 
+.join-community {
+    background-color: #243f5c;
+    border: 2px solid #f39c12;
+    text-align: center;
+    padding: 35px;
+}
