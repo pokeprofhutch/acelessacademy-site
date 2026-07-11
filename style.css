@@ -33,7 +33,7 @@ h2 {
 }
 
 nav {
-    background: #3c2f1d;
+    background: #1b2633;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -41,10 +41,10 @@ nav {
 }
 
 nav a {
-    background-color: #1b2633;
     text-decoration: none;
     margin: 0 20px;
     font-weight: bold;
+    color: #e8edf2;
 }
 
 nav a:hover {
