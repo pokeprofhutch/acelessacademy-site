@@ -161,7 +161,7 @@ section strong {
 }
 
 .resource-description {
-    margin: 5px 0 15px 0;
+    margin: 6px 0 18px 8px;
     color: #d1d9e6;
     font-size: 0.95rem;
 }
@@ -169,6 +169,7 @@ section strong {
 .resource-category {
     border-left: 6px solid #f39c12;
     padding-left: 15px;
+    margin-bottom: 35px;
 }
 
 .resource-legend {
@@ -198,3 +199,17 @@ section strong {
     margin: 5px 0 0 0;
 }
 
+section li a {
+    display: inline-block;
+    color: #f39c12;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+section li a:hover {
+    background-color: #f39c12;
+    color: #111c2e;
+}
