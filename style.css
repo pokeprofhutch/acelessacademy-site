@@ -34,7 +34,17 @@ h2 {
     font-size: 1.8rem;
     font-weight: 700;
     border-bottom: 2px solid #f39c12;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #e8edf2;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 nav {
