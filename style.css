@@ -288,4 +288,9 @@ section li a:hover {
     section li a {
         padding: 8px 10px;
     }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
+
