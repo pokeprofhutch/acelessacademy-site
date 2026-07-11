@@ -66,6 +66,18 @@ nav a.active {
     color: #111c2e;
 }
 
+a {
+    color: #f39c12;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #ffd166;
+    text-decoration: underline;
+}
+
 section {
     background-color: #2f5275;
     padding: 25px;
