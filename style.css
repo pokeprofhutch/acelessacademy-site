@@ -1,6 +1,6 @@
 body {
     font-family: Georgia, "Times New Roman", serif;
-     background-color: #34495e;
+     background-color: #162b4d;
     color: #e8edf2;
     max-width: 1100px;
     margin: auto;
@@ -51,7 +51,7 @@ nav a:hover {
 }
 
 section {
-    background-color: #243447;
+    background-color: #2f5275;
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 10px;
