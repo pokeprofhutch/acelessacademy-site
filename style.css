@@ -165,3 +165,8 @@ section strong {
     color: #d1d9e6;
     font-size: 0.95rem;
 }
+
+.resource-category {
+    border-left: 6px solid #f39c12;
+    padding-left: 15px;
+}
