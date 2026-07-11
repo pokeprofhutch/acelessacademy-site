@@ -312,3 +312,11 @@ section li a:hover {
     }
 }
 
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    color: #d1d9e6;
+    font-size: 0.9rem;
+    border-top: 1px solid #f39c12;
+}
