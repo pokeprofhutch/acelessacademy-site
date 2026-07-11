@@ -29,23 +29,15 @@ header p {
 
 h1 {
     color: #f39c12;
-    font-family: "Trebuchet MS", Arial, sans-serif;
     font-size: 3rem;
-    font-weight: 700;
     margin-bottom: 10px;
 }
 
 h2 {
     color: #f39c12;
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
     border-bottom: 2px solid #f39c12;
-    padding-bottom: 8px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    padding-bottom: 5px;
 }
-
 h3 {
     color: #e8edf2;
     font-family: "Trebuchet MS", Arial, sans-serif;
