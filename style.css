@@ -1,11 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-     background-color: #162b4d;
+    background-color: #162b4d;
     color: #e8edf2;
     max-width: 1100px;
     margin: auto;
     padding: 20px;
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
 header {
@@ -37,7 +42,10 @@ h2 {
     color: #f39c12;
     border-bottom: 2px solid #f39c12;
     padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
+
 h3 {
     color: #e8edf2;
     font-family: "Trebuchet MS", Arial, sans-serif;
@@ -66,10 +74,7 @@ nav a {
     transition: 0.2s;
 }
 
-nav a:hover {
-    background-color: #f39c12;
-    color: #111c2e;
-}
+nav a:hover,
 nav a.active {
     background-color: #f39c12;
     color: #111c2e;
@@ -95,6 +100,17 @@ section {
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
+section p,
+section ul,
+section ol {
+    max-width: 900px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
 ul {
     padding-left: 25px;
     margin-top: 10px;
@@ -106,16 +122,17 @@ li {
     line-height: 1.6;
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 18px;
+section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-section p,
-section ul,
-section ol {
-    max-width: 900px;
+section strong {
+    color: #f39c12;
 }
+
+/* Resource sections */
 
 .resource-link {
     display: block;
@@ -147,16 +164,6 @@ section li a {
 section li a:hover {
     background-color: #f39c12;
     color: #111c2e;
-}
-
-section h2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-section strong {
-    color: #f39c12;
 }
 
 .resource-description {
@@ -195,23 +202,10 @@ section strong {
 }
 
 .legend-item p {
-    margin: 5px 0 0 0;
+    margin: 5px 0 0;
 }
 
-section li a {
-    display: inline-block;
-    color: #f39c12;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 4px 8px;
-    border-radius: 5px;
-    transition: 0.2s;
-}
-
-section li a:hover {
-    background-color: #f39c12;
-    color: #111c2e;
-}
+/* Discord callout */
 
 .discord-button {
     display: inline-block;
@@ -236,6 +230,19 @@ section li a:hover {
     padding: 35px;
 }
 
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    color: #d1d9e6;
+    font-size: 0.9rem;
+    border-top: 1px solid #f39c12;
+}
+
+/* Mobile */
+
 @media (max-width: 700px) {
 
     body {
@@ -249,10 +256,12 @@ section li a:hover {
     nav a {
         display: block;
         margin: 8px 0;
+        padding: 12px;
     }
 
     section {
         padding: 20px;
+        margin-bottom: 20px;
     }
 
     h1 {
@@ -261,7 +270,9 @@ section li a:hover {
 
     h2 {
         font-size: 1.5rem;
-    }    p {
+    }
+
+    p {
         font-size: 1rem;
         line-height: 1.6;
     }
@@ -271,8 +282,9 @@ section li a:hover {
     }
 
     section li a {
-        padding: 6px 8px;
+        padding: 8px 10px;
     }
+
     .discord-button {
         display: block;
         width: fit-content;
@@ -280,35 +292,8 @@ section li a:hover {
         padding: 14px 24px;
     }
 
-    nav a {
-        padding: 12px;
-    }
-
-    section li a {
-        padding: 8px 10px;
-    }
     img {
         max-width: 100%;
         height: auto;
     }
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-
-    section {
-        margin-bottom: 20px;
-    }
-}
-
-footer {
-    text-align: center;
-    padding: 25px 15px;
-    margin-top: 40px;
-    color: #d1d9e6;
-    font-size: 0.9rem;
-    border-top: 1px solid #f39c12;
 }
