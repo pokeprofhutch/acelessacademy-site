@@ -274,5 +274,18 @@ section li a:hover {
     section li a {
         padding: 6px 8px;
     }
+    .discord-button {
+        display: block;
+        width: fit-content;
+        margin: 15px auto;
+        padding: 14px 24px;
+    }
 
+    nav a {
+        padding: 12px;
+    }
+
+    section li a {
+        padding: 8px 10px;
+    }
 }
