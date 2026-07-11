@@ -150,3 +150,13 @@ section li a:hover {
     color: #111c2e;
 }
 
+section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section strong {
+    color: #f39c12;
+}
+
