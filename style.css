@@ -160,3 +160,8 @@ section strong {
     color: #f39c12;
 }
 
+.resource-description {
+    margin: 5px 0 15px 0;
+    color: #d1d9e6;
+    font-size: 0.95rem;
+}
