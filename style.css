@@ -117,3 +117,20 @@ section ul,
 section ol {
     max-width: 900px;
 }
+
+.resource-link {
+    display: block;
+    background-color: #1f2d3d;
+    color: #f39c12;
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.resource-link:hover {
+    background-color: #f39c12;
+    color: #111c2e;
+}
