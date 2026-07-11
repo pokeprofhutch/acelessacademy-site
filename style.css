@@ -213,3 +213,20 @@ section li a:hover {
     background-color: #f39c12;
     color: #111c2e;
 }
+
+.discord-button {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #111c2e;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.discord-button:hover {
+    background-color: #ffd166;
+    color: #111c2e;
+}
+
