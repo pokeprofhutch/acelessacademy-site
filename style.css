@@ -60,6 +60,11 @@ nav a:hover {
     color: #111c2e;
 }
 
+nav a.active {
+    background-color: #f39c12;
+    color: #111c2e;
+}
+
 section {
     background-color: #2f5275;
     padding: 25px;
