@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceless Academy Formats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="AcelessLogo.svg" alt="Aceless Academy Logo" class="logo">
+
+    <h1>Aceless Academy Formats</h1>
+
+    <p>
+        Community-driven alternative Pokémon TCG formats.
+    </p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="formats.html">Formats</a>
+    <a href="rulebook.html">Rulebook</a>
+    <a href="resources.html">Resources</a>
+    <a href="governance.html">Governance</a>
+</nav>
+
+<section>
+    <h2>Format Philosophy</h2>
+
+    <p>
+        Aceless formats seek to preserve competitive integrity,
+        interactive gameplay, and creative deckbuilding while
+        removing mechanics that fundamentally alter traditional
+        single-Prize gameplay.
+    </p>
+</section>
+
+<section>
+    <h2>Aceless Standard</h2>
+
+    <p>
+        Uses the current Pokémon Standard card pool while applying
+        Aceless format restrictions and ban lists.
+    </p>
+</section>
+
+<section>
+    <h2>Aceless Silver</h2>
+
+    <p>
+        Uses cards with Regulation Mark G and later.
+        This format does not rotate and maintains its own ban list.
+    </p>
+</section>
+
+<section>
+    <h2>Aceless Expanded</h2>
+
+    <p>
+        Uses cards from the Black & White era onward while applying
+        Aceless restrictions and governance policies.
+    </p>
+</section>
+
+<section>
+    <h2>Card Release Policy</h2>
+
+    <p>
+        Aceless Academy recognizes Pokémon's structured release schedule:
+    </p>
+
+    <ul>
+        <li>Prerelease Period</li>
+        <li>Official Product Release</li>
+        <li>Pokémon Play Legality Date</li>
+    </ul>
+
+    <p>
+        Newly legal cards will generally remain under observation
+        for an additional two weeks before ban action is considered.
+    </p>
+
+    <p>
+        Exceptions may occur immediately if cards create issues involving:
+    </p>
+
+    <ul>
+        <li>Prize Card manipulation</li>
+        <li>Excessive durability or survivability</li>
+    </ul>
+</section>
+
+</body>
+</html>
