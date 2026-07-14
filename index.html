@@ -20,12 +20,18 @@
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="formats.html">Formats</a>
-    <a href="rulebook.html">Rulebook</a>
-    <a href="resources.html">Resources</a>
-    <a href="about.html">About</a>
-   <a href="basil.html" class="basil-link">Basil Tribute</a>
+    <button class="nav-toggle" onclick="toggleMenu()">
+        ☰ Menu
+    </button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="formats.html">Formats</a>
+        <a href="rulebook.html">Rulebook</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="basil.html" class="basil-link">Basil Tribute</a>
+    </div>
 </nav>
 
 <section>
@@ -129,5 +135,23 @@
         learning, and creative Pokémon TCG formats.
     </p>
 </footer>
+  <script>
+function toggleMenu() {
+    document
+        .getElementById("navLinks")
+        .classList.toggle("show");
+}
+
+document.querySelectorAll(".nav-links a")
+.forEach(link => {
+    link.addEventListener("click", () => {
+        if (window.innerWidth <= 700) {
+            document
+                .getElementById("navLinks")
+                .classList.remove("show");
+        }
+    });
+});
+</script>  
 </body>
 </html>
