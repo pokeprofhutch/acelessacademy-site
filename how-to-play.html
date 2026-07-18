@@ -1,31 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How to Play Aceless</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container">
+
+
+<a href="index.html" class="logo">
+
+<img src="assets/AcelessLogo.svg" alt="Aceless Academy Logo">
+
+</a>
+
+
+
+<nav class="navbar">
+
+
+<button class="menu-toggle" aria-label="Open navigation menu">
+
+☰
+
+</button>
+
+
+
+<ul class="nav-links">
+
+
+<li>
+<a href="news.html">News</a>
+</li>
+
+
+<li>
+<a href="how-to-play.html">How to Play</a>
+</li>
+
+
+<li>
+<a href="tournaments.html">Tournaments</a>
+</li>
+
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+
+<li>
+<a href="tribute.html">Basil Tribute</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+
 <main>
 
 <div class="container">
+
 
 
 <nav class="sub-navbar">
 
 <ul class="sub-nav-links">
 
-<li>
-    <a href="formats.html">Formats</a>
-</li>
 
 <li>
-    <a href="banlist.html">Banlist</a>
+<a href="formats.html">Formats</a>
 </li>
 
-<li>
-    <a href="staples.html">Staples</a>
-</li>
 
 <li>
-    <a href="playstyles.html">Playstyles</a>
+<a href="banlist.html">Banlist</a>
 </li>
 
+
 <li>
-    <a href="examples.html">Examples</a>
+<a href="staples.html">Staples</a>
 </li>
+
+
+<li>
+<a href="playstyles.html">Playstyles</a>
+</li>
+
+
+<li>
+<a href="examples.html">Examples</a>
+</li>
+
 
 </ul>
 
@@ -33,17 +124,22 @@
 
 
 
+
+
 <section class="page-content">
 
 
+
 <h1>
-    How to Play Aceless
+How to Play Aceless
 </h1>
 
 
+
 <p class="subtitle">
-    Learn the fundamentals, rules, and structure of Aceless formats.
+Learn the fundamentals, rules, and structure of Aceless formats.
 </p>
+
 
 
 
@@ -51,22 +147,24 @@
 
 
 <h2>
-    Getting Started
+Getting Started
 </h2>
 
 
 <p>
-    Learn the basics of Aceless gameplay, format structure,
-    and the principles behind competitive play.
+Learn the basics of Aceless gameplay, format structure,
+and the principles behind competitive play.
 </p>
 
 
 <p>
-    Detailed guides and explanations will be added here.
+Detailed guides and explanations will be added here.
 </p>
 
 
 </div>
+
+
 
 
 
@@ -74,17 +172,19 @@
 
 
 <h2>
-    Understanding Aceless Formats
+Understanding Aceless Formats
 </h2>
 
 
 <p>
-    Explore the different Aceless formats, their rules,
-    and the philosophy behind each style of play.
+Explore the different Aceless formats, deckbuilding rules,
+card legality, and the design philosophy behind each format.
 </p>
 
 
 </div>
+
+
 
 
 
@@ -92,22 +192,66 @@
 
 
 <h2>
-    Learning Resources
+Learning Competitive Play
 </h2>
 
 
 <p>
-    Guides, examples, and educational resources will be added
-    to help players understand and improve their gameplay.
+Develop your understanding of strategy, matchups,
+and the decisions that define successful Aceless gameplay.
 </p>
 
 
 </div>
+
+
 
 
 </section>
 
 
+
 </div>
 
 </main>
+
+
+
+
+<footer>
+
+<div class="container">
+
+<p>
+© Aceless Academy — A community dedicated to competitive integrity,
+learning, and creative Pokémon TCG formats.
+</p>
+
+</div>
+
+</footer>
+
+
+
+
+<script>
+
+const menuButton = document.querySelector(".menu-toggle");
+
+const navLinks = document.querySelector(".nav-links");
+
+
+menuButton.addEventListener("click", () => {
+
+navLinks.classList.toggle("active");
+
+});
+
+
+</script>
+
+
+
+</body>
+
+</html>
