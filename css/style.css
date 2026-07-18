@@ -37,25 +37,23 @@ body {
 .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     margin-top: 40px;
     margin-bottom: 30px;
+
+    position: relative;
+    z-index: 10;
 }
 
 .logo img {
     width: 300px;
     height: auto;
     display: block;
-
-    transition: 0.3s ease;
-}
-
-.logo img:hover {
-    transform: scale(1.03);
 }
 
 /* =========================
-   Navigation Bar
+   Navigation
 ========================= */
 .navbar {
     display: flex;
@@ -71,11 +69,12 @@ body {
     flex-wrap: wrap;
 
     gap: 15px;
+
     list-style: none;
 
     padding: 18px 28px;
 
-    background: rgba(25, 40, 65, 0.95);
+    background: #192841;
 
     border: 2px solid #00e5ff;
 
@@ -85,32 +84,12 @@ body {
         0 0 20px rgba(0,229,255,0.45),
         0 0 50px rgba(0,229,255,0.20);
 }
-/* Visible Navigation Panel */
-.nav-links a {
-    color: #ffffff;
-
-    text-decoration: none;
-
-    font-size: 18px;
-
-    padding: 12px 18px;
-
-    border-radius: 12px;
-
-    transition: 0.25s;
-}
-
-.nav-links a:hover {
-    background: rgba(0,229,255,0.25);
-
-    color: #6ff6ff;
-}
 
 /* =========================
    Navigation Links
 ========================= */
 .nav-links a {
-    color: #e6edf3;
+    color: #ffffff;
 
     text-decoration: none;
 
@@ -121,11 +100,11 @@ body {
 
     border-radius: 12px;
 
-    transition: all 0.25s ease;
+    transition: 0.25s ease;
 }
 
 .nav-links a:hover {
-    background: rgba(0,229,255,0.15);
+    background: rgba(0,229,255,0.25);
 
     color: #6ff6ff;
 
@@ -134,7 +113,7 @@ body {
 }
 
 /* =========================
-   Dropdown Placeholder
+   Dropdown Menus
 ========================= */
 .dropdown {
     position: relative;
@@ -144,29 +123,31 @@ body {
     display: none;
 
     position: absolute;
+
     top: 100%;
     left: 0;
 
-    list-style: none;
-
     min-width: 220px;
 
-    background: rgba(20,28,45,0.95);
-
-    border: 1px solid rgba(0,229,255,0.30);
-
-    border-radius: 14px;
+    list-style: none;
 
     padding: 10px 0;
 
+    background: #192841;
+
+    border: 1px solid #00e5ff;
+
+    border-radius: 14px;
+
     box-shadow:
-        0 0 15px rgba(0,229,255,0.20);
+        0 0 15px rgba(0,229,255,0.30);
 
     z-index: 1000;
 }
 
 .dropdown-menu li a {
     display: block;
+
     padding: 12px 18px;
 }
 
