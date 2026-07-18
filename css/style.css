@@ -48,3 +48,7 @@ body {
 .nav-links a:hover {
     color: #00e5ff;
 }
+.logo img {
+    width: 500px !important;
+    height: auto !important;
+}
