@@ -1,1148 +1,16 @@
 /* =========================
-   Base Reset
+   RESET
 ========================= */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
 /* =========================
-   Site Base
-========================= */
-
-body {
-
-    background:
-        linear-gradient(
-            180deg,
-            #18253b 0%,
-            #0b0f14 45%,
-            #05070a 100%
-        );
-
-    color: #e6edf3;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    min-height: 100vh;
-
-}
-
-
-.container {
-
-    width: 90%;
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-}
-
-
-
-/* =========================
-   Logo
-========================= */
-
-.logo {
-
-    display: flex;
-
-    justify-content: center;
-
-    margin-top: 35px;
-
-    margin-bottom: 25px;
-
-}
-
-
-.logo img {
-
-    width: 300px;
-
-    height: auto;
-
-    display: block;
-
-}
-
-
-
-
-
-/* =========================
-   Main Navigation
-========================= */
-
-.navbar {
-
-    display: flex;
-
-    justify-content: center;
-
-    margin-bottom: 45px;
-
-}
-
-
-
-.nav-links {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    gap: 12px;
-
-    list-style: none;
-
-    padding: 14px 22px;
-
-
-    background: rgba(25,40,65,0.95);
-
-    border: 2px solid #ff8c00;
-
-    border-radius: 18px;
-
-
-    box-shadow:
-
-        0 0 18px rgba(255,140,0,.35);
-
-}
-
-
-
-.nav-links a {
-
-    color: #e6edf3;
-
-    text-decoration: none;
-
-    font-size: 17px;
-
-    padding: 10px 16px;
-
-    border-radius: 10px;
-
-    transition: .25s ease;
-
-}
-
-
-
-.nav-links a:hover {
-
-    background: rgba(255,140,0,.18);
-
-    color: #ffd27f;
-
-}
-
-
-
-
-/* Basil Tribute */
-
-.nav-links a[href="tribute.html"] {
-
-    color: #9bbf8a;
-
-}
-
-
-.nav-links a[href="tribute.html"]:hover {
-
-    background: rgba(155,191,138,.18);
-
-    color: #d9edcc;
-
-}
-
-
-
-
-/* =========================
-   Mobile Menu Button
-========================= */
-
-.menu-toggle {
-
-    display: none;
-
-    background: #192841;
-
-    color: #ff8c00;
-
-    border: 2px solid #ff8c00;
-
-    border-radius: 10px;
-
-    padding: 8px 14px;
-
-    font-size: 24px;
-
-    cursor: pointer;
-
-}
-
-
-
-
-/* =========================
-   Homepage
-========================= */
-
-
-.home-content {
-
-    max-width: 1000px;
-
-    margin: 0 auto 50px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 25px;
-
-}
-
-
-
-.home-card {
-
-    background:
-
-        rgba(16,27,45,.75);
-
-
-    border: 1px solid rgba(255,140,0,.25);
-
-    border-radius: 16px;
-
-    padding: 30px;
-
-
-    box-shadow:
-
-        0 8px 25px rgba(0,0,0,.35);
-
-}
-
-
-
-
-.home-card h1 {
-
-    text-align: center;
-
-    color: #ffb347;
-
-    font-size: 36px;
-
-    margin-bottom: 15px;
-
-}
-
-
-
-.home-card h2 {
-
-    color: #ff8c00;
-
-    font-size: 25px;
-
-    margin-bottom: 15px;
-
-}
-
-
-
-
-.home-card p {
-
-    font-size: 17px;
-
-    line-height: 1.7;
-
-    color: #e6edf3;
-
-}
-
-
-
-.home-card ul {
-
-    margin-top: 15px;
-
-    padding-left: 25px;
-
-}
-
-
-
-.home-card li {
-
-    margin-bottom: 10px;
-
-}
-
-
-
-
-
-/* =========================
-   Links
-========================= */
-
-
-.home-card a {
-
-    color: #ffd27f;
-
-    text-decoration: none;
-
-}
-
-
-
-.home-card a:hover {
-
-    color: white;
-
-}
-
-
-
-
-
-/* Quick Access Links */
-
-.home-card li a {
-
-    color: #ffd27f;
-
-}
-
-
-
-
-/* =========================
-   Discord Button
-========================= */
-
-
-.discord-button {
-
-    display: inline-block;
-
-    margin-top: 15px;
-
-
-    background: #5865F2;
-
-    color: white !important;
-
-
-    padding: 14px 28px;
-
-    border-radius: 12px;
-
-
-    font-weight: bold;
-
-    text-decoration: none;
-
-
-    box-shadow:
-
-        0 0 15px rgba(88,101,242,.35);
-
-}
-
-
-
-.discord-button:hover {
-
-    background: #7289da;
-
-}
-
-
-
-
-
-/* =========================
-   Footer
-========================= */
-
-
-footer {
-
-    margin-top: 40px;
-
-    padding: 25px 0;
-
-    text-align: center;
-
-    color: #8892a0;
-
-}
-
-
-
-
-
-/* =========================
-   Mobile
-========================= */
-
-
-@media(max-width:768px){
-
-
-    .logo img {
-
-        width:180px;
-
-    }
-
-
-
-    .navbar {
-
-        flex-direction:column;
-
-    }
-
-
-
-    .menu-toggle {
-
-        display:block;
-
-        margin-bottom:15px;
-
-    }
-
-
-
-
-    .nav-links {
-
-        display:none;
-
-        width:100%;
-
-        flex-direction:column;
-
-    }
-
-
-
-
-    .nav-links.active {
-
-        display:flex;
-
-    }
-
-
-
-    .nav-links a {
-
-        width:100%;
-
-        text-align:center;
-
-        font-size:16px;
-
-    }
-
-
-
-
-    .home-content {
-
-        width:95%;
-
-    }
-
-
-
-    .home-card {
-
-        padding:22px;
-
-    }
-
-
-
-    .home-card h1 {
-
-        font-size:30px;
-
-    }
-
-
-
-    .home-card h2 {
-
-        font-size:22px;
-
-    }
-
-
-
-    .home-card p {
-
-        font-size:16px;
-
-    }
-
-
-}/* =========================
-   Base Reset
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* =========================
-   Site Base
-========================= */
-
-body {
-
-    background:
-        linear-gradient(
-            180deg,
-            #18253b 0%,
-            #0b0f14 40%,
-            #05070a 100%
-        );
-
-    color: #e6edf3;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    min-height: 100vh;
-
-}
-
-
-/* =========================
-   Container
-========================= */
-
-.container {
-
-    width: 90%;
-
-    max-width: 1400px;
-
-    margin: 0 auto;
-
-}
-
-
-/* =========================
-   Logo
-========================= */
-
-.logo {
-
-    display: flex;
-
-    justify-content: center;
-
-    margin-top: 40px;
-
-    margin-bottom: 30px;
-
-}
-
-
-.logo img {
-
-    width: 300px;
-
-    height: auto;
-
-    display: block;
-
-}
-
-
-
-
-
-/* =========================
-   Main Navigation
-========================= */
-
-.navbar {
-
-    display: flex;
-
-    justify-content: center;
-
-    margin-bottom: 40px;
-
-}
-
-
-
-.nav-links {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    gap: 15px;
-
-    list-style: none;
-
-    padding: 18px 28px;
-
-
-    background: #192841;
-
-
-    border: 2px solid #ff8c00;
-
-
-    border-radius: 22px;
-
-
-    box-shadow:
-
-        0 0 20px rgba(255,140,0,.45),
-
-        0 0 50px rgba(255,140,0,.20);
-
-}
-
-
-
-
-.nav-links a {
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    font-size: 18px;
-
-    padding: 12px 18px;
-
-    border-radius: 12px;
-
-    transition: .25s ease;
-
-}
-
-
-
-.nav-links a:hover {
-
-    background: rgba(255,140,0,.25);
-
-    color: #ffd27f;
-
-}
-
-
-
-
-/* Basil Tribute */
-
-.nav-links a[href="tribute.html"] {
-
-    color: #9bbf8a;
-
-}
-
-
-
-.nav-links a[href="tribute.html"]:hover {
-
-    background: rgba(155,191,138,.20);
-
-    color: #d9edcc;
-
-}
-
-
-
-
-
-/* =========================
-   Mobile Menu Button
-========================= */
-
-.menu-toggle {
-
-    display: none;
-
-    background: #192841;
-
-    color: #ff8c00;
-
-    border: 2px solid #ff8c00;
-
-    border-radius: 10px;
-
-    padding: 8px 14px;
-
-    font-size: 24px;
-
-    cursor: pointer;
-
-}
-
-
-
-
-
-/* =========================
-   Homepage Cards
-========================= */
-
-
-.home-content {
-
-    max-width: 1100px;
-
-    margin: 50px auto;
-
-    display: grid;
-
-    gap: 25px;
-
-}
-
-
-
-.home-card {
-
-
-    background:
-
-        rgba(16,27,45,.95);
-
-
-    border: 1px solid rgba(255,140,0,.35);
-
-
-    border-radius: 18px;
-
-
-    padding: 35px;
-
-
-
-    box-shadow:
-
-        0 0 20px rgba(0,0,0,.35);
-
-}
-
-
-
-
-
-.home-card h1 {
-
-
-    text-align: center;
-
-
-    color: #ffb347;
-
-
-    font-size: 38px;
-
-
-    margin-bottom: 20px;
-
-}
-
-
-
-.home-card h2 {
-
-
-    color: #ff8c00;
-
-
-    font-size: 28px;
-
-
-    margin-bottom: 20px;
-
-}
-
-
-
-
-
-.home-card p {
-
-
-    color: #e6edf3;
-
-
-    font-size: 18px;
-
-
-    line-height: 1.7;
-
-}
-
-
-
-
-
-.home-card ul {
-
-
-    margin-top: 20px;
-
-
-    padding-left: 30px;
-
-}
-
-
-
-
-
-.home-card li {
-
-
-    margin-bottom: 12px;
-
-
-    line-height: 1.5;
-
-}
-
-
-
-
-/* =========================
-   Quick Links
-========================= */
-
-
-.home-card li a {
-
-
-    display: inline-block;
-
-
-    color: #ffd27f;
-
-
-    text-decoration: none;
-
-
-    background: #192841;
-
-
-    border: 1px solid rgba(255,140,0,.45);
-
-
-    padding: 10px 16px;
-
-
-    border-radius: 10px;
-
-
-}
-
-
-
-.home-card li a:hover {
-
-
-    background: #243957;
-
-
-    color: white;
-
-
-}
-
-
-
-
-
-/* =========================
-   Discord Button
-========================= */
-
-
-.discord-button {
-
-
-    display: inline-block;
-
-
-    margin-top: 20px;
-
-
-    background: #5865F2;
-
-
-    color: white !important;
-
-
-    padding: 16px 30px;
-
-
-    border-radius: 14px;
-
-
-    font-size: 18px;
-
-
-    font-weight: bold;
-
-
-
-    text-decoration: none;
-
-
-    box-shadow:
-
-        0 0 15px rgba(88,101,242,.45);
-
-}
-
-
-
-.discord-button:hover {
-
-
-    background: #7289da;
-
-
-}
-
-
-
-
-
-.join-community {
-
-
-    text-align: center;
-
-}
-
-
-
-
-
-/* =========================
-   Footer
-========================= */
-
-
-footer {
-
-
-    margin-top: 50px;
-
-    padding: 25px 0;
-
-    text-align: center;
-
-    color: #9aa7b5;
-
-}
-
-
-
-
-
-/* =========================
-   Mobile
-========================= */
-
-
-@media(max-width:768px){
-
-
-
-    .logo img {
-
-        width: 180px;
-
-    }
-
-
-
-    .navbar {
-
-        flex-direction: column;
-
-    }
-
-
-
-    .menu-toggle {
-
-        display: block;
-
-        margin-bottom: 15px;
-
-    }
-
-
-
-    .nav-links {
-
-
-        display: none;
-
-
-        width: 100%;
-
-
-        flex-direction: column;
-
-
-        gap: 8px;
-
-
-    }
-
-
-
-
-    .nav-links.active {
-
-
-        display: flex;
-
-
-    }
-
-
-
-
-    .nav-links a {
-
-
-        font-size: 16px;
-
-
-        width: 100%;
-
-
-        text-align: center;
-
-
-    }
-
-
-
-
-    .home-content {
-
-
-        width: 95%;
-
-
-        margin: 30px auto;
-
-
-        gap: 18px;
-
-
-    }
-
-
-
-
-    .home-card {
-
-
-        padding: 22px;
-
-
-    }
-
-
-
-
-    .home-card h1 {
-
-
-        font-size: 30px;
-
-
-    }
-
-
-
-
-    .home-card h2 {
-
-
-        font-size: 22px;
-
-
-    }
-
-
-
-
-    .home-card p {
-
-
-        font-size: 16px;
-
-
-    }
-
-
-
-}/* =========================
-   Base Reset
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* =========================
-   Site Base
+   BASE
 ========================= */
 
 body {
@@ -1155,7 +23,7 @@ body {
         #05070a 100%
     );
 
-    background-attachment: fixed;
+    background-attachment:fixed;
 
     color:#e6edf3;
 
@@ -1165,29 +33,23 @@ body {
     sans-serif;
 
     min-height:100vh;
-
 }
 
-
-
-/* =========================
-   Container
-========================= */
 
 .container {
 
     width:90%;
 
-    max-width:1400px;
+    max-width:1200px;
 
-    margin:0 auto;
+    margin:auto;
 
 }
 
 
 
 /* =========================
-   Logo
+   HEADER / LOGO
 ========================= */
 
 .logo {
@@ -1214,7 +76,7 @@ body {
 
 
 /* =========================
-   Main Navigation
+   NAVIGATION
 ========================= */
 
 .navbar {
@@ -1223,61 +85,56 @@ body {
 
     justify-content:center;
 
-    margin-bottom:40px;
+    margin-bottom:45px;
 
 }
 
 
 .nav-links {
 
+    list-style:none;
+
     display:flex;
-
-    align-items:center;
-
-    justify-content:center;
 
     flex-wrap:wrap;
 
+    justify-content:center;
+
     gap:15px;
-
-    list-style:none;
-
-    padding:18px 28px;
 
 
     background:#192841;
 
     border:2px solid #ff8c00;
 
-    border-radius:22px;
+    border-radius:20px;
+
+    padding:18px 25px;
 
 
     box-shadow:
-
-    0 0 20px rgba(255,140,0,.45),
-
-    0 0 50px rgba(255,140,0,.20);
+    0 0 20px rgba(255,140,0,.35);
 
 }
-
 
 
 .nav-links a {
 
-    color:white;
+    display:block;
+
+    color:#ffffff;
 
     text-decoration:none;
 
-    font-size:18px;
-
     padding:12px 18px;
 
-    border-radius:12px;
+    border-radius:10px;
+
+    font-size:17px;
 
     transition:.25s;
 
 }
-
 
 
 .nav-links a:hover {
@@ -1299,18 +156,9 @@ body {
 }
 
 
-.nav-links a[href="tribute.html"]:hover {
-
-    background:rgba(155,191,138,.20);
-
-    color:#d9edcc;
-
-}
-
-
 
 /* =========================
-   Mobile Menu
+   MOBILE BUTTON
 ========================= */
 
 .menu-toggle {
@@ -1325,7 +173,7 @@ body {
 
     border-radius:10px;
 
-    padding:8px 14px;
+    padding:8px 15px;
 
     font-size:24px;
 
@@ -1334,9 +182,12 @@ body {
 
 
 /* =========================
-   Homepage Cards
+   STANDARD PAGE STYLE
+   ABOUT / BASIL / HOME
 ========================= */
 
+
+.page-content,
 .home-content {
 
     max-width:1100px;
@@ -1347,6 +198,7 @@ body {
 
 
 
+.page-content h1,
 .home-content h1 {
 
     text-align:center;
@@ -1355,92 +207,153 @@ body {
 
     font-size:38px;
 
-    margin-bottom:35px;
+    margin-bottom:10px;
 
 }
 
 
 
-/* Each content block */
+.subtitle {
 
-.home-content h2 {
+    text-align:center;
 
-    color:#ff8c00;
+    color:#9bbf8a;
 
-    background:#192841;
+    font-size:20px;
 
-    border:1px solid rgba(255,140,0,.35);
+    font-style:italic;
 
-    border-bottom:none;
-
-    padding:20px 25px;
-
-    margin-top:35px;
-
-    margin-bottom:0;
-
-    border-radius:18px 18px 0 0;
+    margin-bottom:40px;
 
 }
 
 
 
-.home-content p {
+/* =========================
+   CARDS
+========================= */
 
-    background:rgba(16,27,45,.95);
-
-    border:1px solid rgba(255,140,0,.35);
-
-    border-top:none;
-
-    padding:25px;
-
-    font-size:18px;
-
-    line-height:1.7;
-
-}
+.content-card,
+.home-card {
 
 
-
-.home-content h2 + p {
-
-    border-radius:
-
-    0 0 18px 18px;
-
-}
+    background:
+    rgba(16,27,45,.90);
 
 
+    border:
 
-/* Lists */
+    1px solid rgba(255,140,0,.35);
 
-.home-content ul {
-
-    background:rgba(16,27,45,.95);
-
-    border:1px solid rgba(255,140,0,.35);
 
     border-radius:18px;
 
-    padding:25px 45px;
+
+    padding:35px;
+
+
+    margin-bottom:25px;
+
+
+    box-shadow:
+
+    0 0 20px rgba(0,0,0,.35);
+
+}
+
+
+
+.content-card h2,
+.home-card h2 {
+
+    color:#ff8c00;
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.content-card p,
+.home-card p {
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.content-card p:last-child,
+.home-card p:last-child {
+
+    margin-bottom:0;
+
+}
+
+
+
+/* =========================
+   LISTS
+========================= */
+
+.content-card ul,
+.home-card ul {
 
     margin-top:20px;
 
-}
-
-
-.home-content li {
-
-    margin-bottom:15px;
+    padding-left:25px;
 
 }
 
 
+.content-card li,
+.home-card li {
 
-/* Links */
+    margin-bottom:14px;
 
-.home-content li a {
+    line-height:1.6;
+
+}
+
+
+
+/* =========================
+   LINKS
+========================= */
+
+.content-card a,
+.home-card a {
+
+    color:#ffd27f;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+.content-card a:hover,
+.home-card a:hover {
+
+    color:white;
+
+}
+
+
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+.quick-link {
 
     display:inline-block;
 
@@ -1450,698 +363,15 @@ body {
 
     border-radius:10px;
 
-    padding:10px 15px;
-
-    color:#ffd27f;
-
-    text-decoration:none;
-
-}
-
-
-
-.home-content li a:hover {
-
-    color:white;
-
-    background:#243957;
-
-}
-
-
-
-/* Discord */
-
-.discord-button {
-
-    display:inline-block;
-
-    margin-top:15px;
-
-    background:#5865F2;
-
-    color:white !important;
-
-    padding:16px 30px;
-
-    border-radius:14px;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-}
-
-
-
-.discord-button:hover {
-
-    background:#7289da;
-
-}
-
-
-
-/* =========================
-   Tribute Page
-========================= */
-
-
-.tribute-content {
-
-    max-width:900px;
-
-    margin:50px auto;
-
-    padding:40px;
-
-    background:rgba(16,27,45,.95);
-
-    border:1px solid rgba(255,140,0,.35);
-
-    border-radius:18px;
-
-}
-
-
-
-.tribute-content h1 {
-
-    text-align:center;
-
-    color:#ffd27f;
-
-    margin-bottom:25px;
-
-}
-
-
-
-.tribute-content p {
-
-    font-size:18px;
-
-    line-height:1.8;
-
-    margin-bottom:20px;
-
-}
-
-
-
-/* =========================
-   Mobile
-========================= */
-
-@media(max-width:768px){
-
-
-.logo img {
-
-    width:180px;
-
-}
-
-
-.menu-toggle {
-
-    display:block;
-
-    margin-bottom:15px;
-
-}
-
-
-
-.navbar {
-
-    flex-direction:column;
-
-}
-
-
-
-.nav-links {
-
-    display:none;
-
-    width:100%;
-
-    flex-direction:column;
-
-}
-
-
-
-.nav-links.active {
-
-    display:flex;
-
-}
-
-
-
-.nav-links a {
-
-    font-size:16px;
-
-}
-
-
-
-.home-content {
-
-    width:95%;
-
-}
-
-
-
-.home-content h1 {
-
-    font-size:30px;
-
-}
-
-
-
-.home-content p,
-.home-content ul {
-
-    font-size:16px;
-
-    padding:18px;
-
-}
-
-}/* =========================
-   Base Reset
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* =========================
-   Site Base
-========================= */
-
-body {
-
-    background:
-        radial-gradient(circle at top,
-        #18253b 0%,
-        #0b0f14 45%,
-        #05070a 100%);
-
-    color: #e6edf3;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    min-height: 100vh;
-}
-
-
-/* =========================
-   Container
-========================= */
-
-.container {
-
-    width: 90%;
-
-    max-width: 1400px;
-
-    margin: 0 auto;
-
-}
-
-
-/* =========================
-   Logo
-========================= */
-
-.logo {
-
-    display: flex;
-
-    justify-content: center;
-
-    margin-top: 40px;
-
-    margin-bottom: 30px;
-
-}
-
-
-.logo img {
-
-    width: 300px;
-
-    height: auto;
-
-}
-
-
-
-/* =========================
-   Main Navigation
-========================= */
-
-.navbar {
-
-    display: flex;
-
-    justify-content: center;
-
-    margin-bottom: 35px;
-
-}
-
-
-.nav-links {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    gap: 15px;
-
-    list-style: none;
-
-    padding: 18px 28px;
-
-    background: #192841;
-
-    border: 2px solid #ff8c00;
-
-    border-radius: 22px;
-
-    box-shadow:
-        0 0 20px rgba(255,140,0,.45),
-        0 0 50px rgba(255,140,0,.20);
-
-}
-
-
-.nav-links a {
-
-    color: white;
-
-    text-decoration: none;
-
-    font-size: 18px;
-
-    padding: 12px 18px;
-
-    border-radius: 12px;
-
-    transition: .25s;
-
-}
-
-
-.nav-links a:hover {
-
-    background: rgba(255,140,0,.25);
-
-    color:#ffd27f;
-
-}
-
-
-
-/* Basil Tribute */
-
-.nav-links a[href="tribute.html"] {
-
-    color:#9bbf8a;
-
-}
-
-
-.nav-links a[href="tribute.html"]:hover {
-
-    background:rgba(155,191,138,.20);
-
-    color:#d9edcc;
-
-}
-
-
-
-/* =========================
-   Mobile Menu
-========================= */
-
-.menu-toggle {
-
-    display:none;
-
-    background:#192841;
-
-    color:#ff8c00;
-
-    border:2px solid #ff8c00;
-
-    border-radius:10px;
-
-    padding:8px 14px;
-
-    font-size:24px;
-
-}
-
-
-
-/* =========================
-   Homepage Cards
-========================= */
-
-.home-content {
-
-    max-width:1100px;
-
-    margin:50px auto;
-
-}
-
-
-.home-content h1 {
-
-    text-align:center;
-
-    color:#ffb347;
-
-    font-size:38px;
-
-    margin-bottom:30px;
-
-}
-
-
-.home-content h2 {
-
-    color:#ff8c00;
-
-    background:rgba(16,27,45,.85);
-
-    border-left:3px solid #ff8c00;
-
-    padding:20px;
-
-    margin-top:30px;
-
-    border-radius:14px 14px 0 0;
-
-}
-
-
-.home-content p,
-.home-content ul {
-
-    background:rgba(16,27,45,.85);
-
-    padding:25px;
-
-    border-radius:0 0 14px 14px;
-
-    line-height:1.7;
-
-    font-size:18px;
-
-}
-
-
-.home-content li {
-
-    margin-bottom:12px;
-
-}
-
-
-/* Discord */
-
-.discord-button {
-
-    display:inline-block;
-
-    background:#5865F2;
-
-    color:white!important;
-
-    padding:14px 24px;
-
-    border-radius:12px;
-
-    font-weight:bold;
-
-}
-
-
-
-/* =========================
-   Tribute Card
-========================= */
-
-.tribute-content {
-
-    max-width:900px;
-
-    margin:50px auto;
-
-    padding:40px;
-
-    background:rgba(16,27,45,.85);
-
-    border:1px solid rgba(255,140,0,.35);
-
-    border-radius:18px;
-
-}
-
-
-.tribute-content h1 {
-
-    text-align:center;
-
-    color:#ffd27f;
-
-}
-
-
-.tribute-content p {
-
-    line-height:1.8;
-
-    font-size:18px;
-
-    margin-bottom:20px;
-
-}
-
-
-
-/* =========================
-   Mobile
-========================= */
-
-@media(max-width:768px){
-
-
-.logo img {
-
-    width:180px;
-
-}
-
-
-.menu-toggle {
-
-    display:block;
-
-    margin-bottom:15px;
-
-}
-
-
-.navbar {
-
-    flex-direction:column;
-
-}
-
-
-.nav-links {
-
-    display:none;
-
-    width:100%;
-
-    flex-direction:column;
-
-}
-
-
-.nav-links.active {
-
-    display:flex;
-
-}
-
-
-.nav-links a {
-
-    font-size:16px;
-
-}
-
-
-.home-content {
-
-    width:95%;
-
-}
-
-
-.home-content h1 {
-
-    font-size:30px;
-
-}
-
-
-.home-content p,
-.home-content ul {
-
-    font-size:16px;
-
-    padding:18px;
-
-}
-
-}
-/* =========================
-   Improved Homepage Cards
-========================= */
-
-.home-content {
-
-    max-width: 1100px;
-
-    margin: 50px auto;
-
-    display: grid;
-
-    gap: 25px;
-
-}
-
-
-/* Every homepage section */
-
-.home-content section {
-
-    background:
-        rgba(16,27,45,0.95);
-
-    border:1px solid rgba(255,140,0,0.35);
-
-    border-radius:18px;
-
-    padding:35px;
-
-    box-shadow:
-        0 0 20px rgba(0,0,0,0.35);
-
-}
-
-
-/* Titles */
-
-.home-content h2 {
-
-    color:#ff8c00;
-
-    font-size:28px;
-
-    margin-bottom:20px;
-
-}
-
-
-/* Paragraphs */
-
-.home-content p {
-
-    color:#e6edf3;
-
-    font-size:18px;
-
-    line-height:1.7;
-
-}
-
-
-/* Lists */
-
-.home-content ul {
-
-    margin-top:20px;
-
-    padding-left:25px;
-
-}
-
-
-.home-content li {
-
-    margin-bottom:12px;
-
-    font-size:17px;
-
-}
-
-
-/* Quick Access links */
-
-.home-content li a {
-
-    display:inline-block;
-
-    background:#192841;
-
-    border:1px solid rgba(255,140,0,0.45);
-
     padding:10px 16px;
 
-    border-radius:10px;
-
-    color:#ffd27f;
-
-    margin-bottom:5px;
-
-}
-
-
-.home-content li a:hover {
-
-    background:#243957;
-
-    color:white;
-
 }
 
 
 
-/* Discord Section */
+/* =========================
+   DISCORD
+========================= */
 
 .join-community {
 
@@ -2150,26 +380,32 @@ body {
 }
 
 
+
 .discord-button {
+
+    display:inline-block;
 
     margin-top:20px;
 
-    display:inline-block;
+    padding:16px 30px;
+
 
     background:#5865F2;
 
     color:white !important;
 
-    padding:16px 30px;
 
     border-radius:14px;
 
-    font-size:18px;
 
     font-weight:bold;
 
+    text-decoration:none;
+
+
     box-shadow:
-        0 0 15px rgba(88,101,242,.45);
+
+    0 0 15px rgba(88,101,242,.45);
 
 }
 
@@ -2183,377 +419,131 @@ body {
 
 
 /* =========================
-   Better Background
+   FOOTER
 ========================= */
 
-body {
+footer {
 
-    background:
-    linear-gradient(
-        180deg,
-        #18253b 0%,
-        #0b0f14 35%,
-        #05070a 100%
-    );
+    margin-top:50px;
 
-}
-/* =========================
-   Content Links
-========================= */
+    padding:25px 0;
 
-.tribute-content ul {
+    text-align:center;
 
-    margin: 20px 0 30px;
-
-    padding-left: 25px;
-
-}
-
-
-.tribute-content li {
-
-    margin-bottom: 14px;
-
-    line-height: 1.6;
-
-}
-
-
-
-.tribute-content li a {
-
-    color: #ffd27f;
-
-    text-decoration: none;
-
-    font-weight: 600;
-
-    transition: .25s ease;
-
-}
-
-
-
-.tribute-content li a:hover {
-
-    color: #ffffff;
-
-    text-shadow:
-
-        0 0 8px rgba(255,140,0,.7);
+    color:#9aa7b5;
 
 }
 
 
 
 /* =========================
-   Discord Button
-========================= */
-
-.discord-button {
-
-    display: inline-block;
-
-    padding: 14px 28px;
-
-    background: #5865F2;
-
-    color: #ffffff !important;
-
-    border-radius: 12px;
-
-    font-weight: bold;
-
-    text-decoration: none;
-
-    box-shadow:
-
-        0 0 15px rgba(88,101,242,.35);
-
-    transition: .25s ease;
-
-}
-
-
-
-.discord-button:hover {
-
-    background: #7289da;
-
-    transform: translateY(-2px);
-
-}
-/* =========================
-   Content Spacing Refinement
-========================= */
-
-.tribute-content h2 {
-
-    margin-top: 35px;
-
-    margin-bottom: 18px;
-
-}
-
-
-.tribute-content p {
-
-    margin-bottom: 20px;
-
-}
-
-
-.tribute-content ul {
-
-    margin-bottom: 25px;
-
-}
-
-
-/* First heading should not have extra space */
-
-.tribute-content h1 + p {
-
-    margin-bottom: 35px;
-
-}
-/* =========================
-   Standard Page Content
-========================= */
-
-.page-content {
-
-    max-width: 1100px;
-
-    margin: 50px auto;
-
-}
-
-
-/* Page Title */
-
-.page-content h1 {
-
-    text-align: center;
-
-    color: #ffb347;
-
-    font-size: 38px;
-
-    margin-bottom: 10px;
-
-}
-
-
-/* Page Subtitle */
-
-.page-content .subtitle {
-
-    text-align: center;
-
-    color: #9bbf8a;
-
-    font-size: 20px;
-
-    font-style: italic;
-
-    margin-bottom: 40px;
-
-}
-
-
-/* Content Cards */
-
-.content-card {
-
-    background: rgba(16,27,45,0.90);
-
-    border: 1px solid rgba(255,140,0,0.35);
-
-    border-radius: 18px;
-
-    padding: 35px;
-
-    margin-bottom: 25px;
-
-    box-shadow:
-        0 0 20px rgba(0,0,0,0.35);
-
-}
-
-
-/* Card Titles */
-
-.content-card h2 {
-
-    color: #ff8c00;
-
-    font-size: 26px;
-
-    margin-bottom: 20px;
-
-}
-
-
-/* Card Text */
-
-.content-card p {
-
-    color: #e6edf3;
-
-    font-size: 18px;
-
-    line-height: 1.8;
-
-    margin-bottom: 20px;
-
-}
-
-
-/* Remove extra space on last paragraph */
-
-.content-card p:last-child {
-
-    margin-bottom: 0;
-
-}
-
-
-/* =========================
-   Mobile Page Cards
+   MOBILE
 ========================= */
 
 @media(max-width:768px){
 
-    .page-content {
 
-        width: 95%;
+.logo img {
 
-        margin: 30px auto;
-
-    }
-
-
-    .page-content h1 {
-
-        font-size: 30px;
-
-    }
-
-
-    .page-content .subtitle {
-
-        font-size: 17px;
-
-    }
-
-
-    .content-card {
-
-        padding: 20px;
-
-        border-radius: 14px;
-
-    }
-
-
-    .content-card h2 {
-
-        font-size: 22px;
-
-    }
-
-
-    .content-card p {
-
-        font-size: 16px;
-
-        line-height: 1.6;
-
-    }
-
-}
-/* =========================
-   Content Card Lists
-========================= */
-
-.content-card ul {
-
-    margin-top: 20px;
-
-    padding-left: 25px;
-
-}
-
-
-.content-card li {
-
-    margin-bottom: 14px;
-
-    line-height: 1.6;
+    width:180px;
 
 }
 
 
 
-/* =========================
-   Content Card Links
-========================= */
+.menu-toggle {
 
-.content-card li a {
+    display:block;
 
-    display: inline-block;
+    margin:auto;
 
-    color: #ffd27f;
-
-    text-decoration: none;
-
-    background: #192841;
-
-    border: 1px solid rgba(255,140,0,0.35);
-
-    border-radius: 10px;
-
-    padding: 8px 14px;
-
-    margin-right: 8px;
-
-    transition: .25s ease;
-
-}
-
-
-.content-card li a:hover {
-
-    background: rgba(255,140,0,0.25);
-
-    color: #ffffff;
-
-    border-color: #ff8c00;
+    margin-bottom:15px;
 
 }
 
 
 
-/* =========================
-   Mobile Lists
-========================= */
+.navbar {
 
-@media(max-width:768px){
+    flex-direction:column;
 
-    .content-card ul {
-
-        padding-left: 20px;
-
-    }
+}
 
 
-    .content-card li a {
 
-        display:block;
+.nav-links {
 
-        margin-bottom:8px;
+    display:none;
 
-    }
+    width:100%;
+
+    flex-direction:column;
+
+}
+
+
+
+.nav-links.active {
+
+    display:flex;
+
+}
+
+
+
+.nav-links a {
+
+    text-align:center;
+
+    width:100%;
+
+}
+
+
+
+.page-content,
+.home-content {
+
+    width:95%;
+
+    margin:30px auto;
+
+}
+
+
+
+.content-card,
+.home-card {
+
+    padding:20px;
+
+}
+
+
+
+.page-content h1,
+.home-content h1 {
+
+    font-size:30px;
+
+}
+
+
+
+.content-card h2,
+.home-card h2 {
+
+    font-size:22px;
+
+}
+
+
+
+.content-card p,
+.home-card p {
+
+    font-size:16px;
+
+}
 
 }
