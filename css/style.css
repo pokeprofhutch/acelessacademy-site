@@ -1,16 +1,20 @@
 /* =========================
    Base Reset
 ========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 /* =========================
    Site Base
 ========================= */
+
 body {
+
     background:
         radial-gradient(circle at top,
         #18253b 0%,
@@ -18,7 +22,9 @@ body {
         #05070a 100%);
 
     color: #e6edf3;
+
     font-family: Arial, Helvetica, sans-serif;
+
     min-height: 100vh;
 }
 
@@ -26,47 +32,68 @@ body {
 /* =========================
    Container
 ========================= */
+
 .container {
+
     width: 90%;
+
     max-width: 1400px;
+
     margin: 0 auto;
+
 }
 
 
 /* =========================
    Logo
 ========================= */
+
 .logo {
+
     display: flex;
+
     justify-content: center;
 
     margin-top: 40px;
+
     margin-bottom: 30px;
+
 }
 
+
 .logo img {
+
     width: 300px;
+
     height: auto;
-    display: block;
+
 }
+
 
 
 /* =========================
    Main Navigation
 ========================= */
+
 .navbar {
+
     display: flex;
+
     justify-content: center;
 
     margin-bottom: 35px;
+
 }
 
 
 .nav-links {
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     flex-wrap: wrap;
 
     gap: 15px;
@@ -82,14 +109,15 @@ body {
     border-radius: 22px;
 
     box-shadow:
-        0 0 20px rgba(255,140,0,0.45),
-        0 0 50px rgba(255,140,0,0.20);
+        0 0 20px rgba(255,140,0,.45),
+        0 0 50px rgba(255,140,0,.20);
+
 }
 
 
 .nav-links a {
 
-    color: #ffffff;
+    color: white;
 
     text-decoration: none;
 
@@ -99,99 +127,38 @@ body {
 
     border-radius: 12px;
 
-    transition: 0.25s ease;
+    transition: .25s;
+
 }
 
 
 .nav-links a:hover {
 
-    background: rgba(255,140,0,0.25);
+    background: rgba(255,140,0,.25);
 
-    color: #ffd27f;
+    color:#ffd27f;
 
-    box-shadow:
-        0 0 12px rgba(255,140,0,0.30);
 }
 
 
-/* =========================
-   Basil Tribute Button
-========================= */
+
+/* Basil Tribute */
 
 .nav-links a[href="tribute.html"] {
 
-    color: #9bbf8a;
+    color:#9bbf8a;
 
 }
 
 
 .nav-links a[href="tribute.html"]:hover {
 
-    background: rgba(155,191,138,0.20);
+    background:rgba(155,191,138,.20);
 
-    color: #d9edcc;
+    color:#d9edcc;
 
-    box-shadow:
-        0 0 12px rgba(155,191,138,0.40);
 }
 
-
-/* =========================
-   Secondary Navigation
-========================= */
-
-.sub-navbar {
-
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 30px;
-}
-
-
-.sub-nav-links {
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 15px;
-
-    list-style: none;
-
-    padding: 12px 22px;
-
-    background: #101b2d;
-
-    border: 1px solid #ff8c00;
-
-    border-radius: 16px;
-
-    box-shadow:
-        0 0 12px rgba(255,140,0,0.25);
-}
-
-
-.sub-nav-links a {
-
-    color: #ffd27f;
-
-    text-decoration: none;
-
-    padding: 8px 14px;
-
-    font-size: 16px;
-}
-
-
-.sub-nav-links a:hover {
-
-    color: #ffffff;
-
-    background: rgba(255,140,0,0.20);
-
-    border-radius: 10px;
-}
 
 
 /* =========================
@@ -200,675 +167,228 @@ body {
 
 .menu-toggle {
 
-    display: none;
+    display:none;
 
-    background: #192841;
+    background:#192841;
 
-    color: #ff8c00;
+    color:#ff8c00;
 
-    border: 2px solid #ff8c00;
+    border:2px solid #ff8c00;
 
-    border-radius: 10px;
+    border-radius:10px;
 
-    padding: 8px 14px;
+    padding:8px 14px;
 
-    font-size: 24px;
+    font-size:24px;
 
-    cursor: pointer;
 }
+
 
 
 /* =========================
-   Mobile
-========================= */
-
-@media (max-width: 768px) {
-
-    .logo img {
-        width: 180px;
-    }
-
-
-    .navbar {
-
-        flex-direction: column;
-
-    }
-
-
-    .menu-toggle {
-
-        display: block;
-
-        margin-bottom: 15px;
-
-    }
-
-
-    .nav-links {
-
-        display: none;
-
-        width: 100%;
-
-        flex-direction: column;
-
-        gap: 8px;
-
-    }
-
-
-    .nav-links.active {
-
-        display: flex;
-
-    }
-
-
-    .nav-links a {
-
-        font-size: 16px;
-
-        padding: 10px 14px;
-
-    }
-
-}/* =========================
-   Base Reset
-========================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* =========================
-   Site Base
-========================= */
-body {
-    background:
-        radial-gradient(circle at top,
-        #18253b 0%,
-        #0b0f14 45%,
-        #05070a 100%);
-
-    color: #e6edf3;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-}
-
-/* =========================
-   Main Container
-========================= */
-.container {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-/* =========================
-   Logo
-========================= */
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 40px;
-    margin-bottom: 30px;
-
-    position: relative;
-    z-index: 10;
-}
-
-.logo img {
-    width: 300px;
-    height: auto;
-    display: block;
-}
-
-/* =========================
-   Main Navigation
-========================= */
-.navbar {
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 40px;
-}
-
-.nav-links {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 15px;
-
-    list-style: none;
-
-    padding: 18px 28px;
-
-    background: #192841;
-
-    border: 2px solid #ff8c00;
-
-    border-radius: 22px;
-
-    box-shadow:
-        0 0 20px rgba(255,140,0,0.45),
-        0 0 50px rgba(255,140,0,0.20);
-}
-
-/* =========================
-   Navigation Links
-========================= */
-.nav-links a {
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    font-size: 18px;
-    font-weight: 500;
-
-    padding: 12px 18px;
-
-    border-radius: 12px;
-
-    transition: 0.25s ease;
-}
-
-
-.nav-links a:hover {
-
-    background: rgba(255,140,0,0.25);
-
-    color: #ffd27f;
-
-    box-shadow:
-        0 0 12px rgba(255,140,0,0.30);
-}
-
-
-/* =========================
-   Secondary Navigation
-========================= */
-.sub-navbar {
-
-    display: flex;
-    justify-content: center;
-
-    margin-top: -20px;
-    margin-bottom: 30px;
-}
-
-
-.sub-nav-links {
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 15px;
-
-    list-style: none;
-
-    padding: 12px 22px;
-
-    background: #101b2d;
-
-    border: 1px solid #ff8c00;
-
-    border-radius: 16px;
-
-    box-shadow:
-        0 0 12px rgba(255,140,0,0.25);
-}
-
-
-.sub-nav-links a {
-
-    color: #ffd27f;
-
-    text-decoration: none;
-
-    font-size: 16px;
-
-    padding: 8px 14px;
-}
-
-
-.sub-nav-links a:hover {
-
-    color: #ffffff;
-
-    background: rgba(255,140,0,0.20);
-
-    border-radius: 10px;
-}
-
-
-/* =========================
-   Basil Tribute Button
-========================= */
-
-.nav-links li:last-child a {
-
-    color: #7CFF7C;
-}
-
-
-.nav-links li:last-child a:hover {
-
-    background: rgba(124,255,124,0.20);
-
-    color: #ffffff;
-
-    box-shadow:
-        0 0 12px rgba(124,255,124,0.45);
-}
-
-
-/* =========================
-   Mobile Menu
-========================= */
-
-.menu-toggle {
-
-    display: none;
-
-    background: #192841;
-
-    color: #ff8c00;
-
-    border: 2px solid #ff8c00;
-
-    border-radius: 10px;
-
-    padding: 8px 14px;
-
-    font-size: 24px;
-
-    cursor: pointer;
-}
-
-
-/* =========================
-   Mobile
-========================= */
-
-@media (max-width: 768px) {
-
-
-    .logo img {
-
-        width: 180px;
-
-    }
-
-
-    .navbar {
-
-        flex-direction: column;
-
-    }
-
-
-    .menu-toggle {
-
-        display: block;
-
-        margin-bottom: 15px;
-
-    }
-
-
-    .nav-links {
-
-        display: none;
-
-        width: 100%;
-
-        flex-direction: column;
-
-    }
-
-
-    .nav-links.active {
-
-        display: flex;
-
-    }
-
-
-    .nav-links a {
-
-        font-size: 16px;
-
-        padding: 10px 14px;
-
-    }
-
-
-    .nav-links {
-
-        gap: 8px;
-
-        padding: 12px;
-
-    }
-
-}
-/* =========================
-   Tribute Page
-========================= */
-
-.tribute-content {
-
-    max-width: 900px;
-
-    margin: 50px auto;
-
-    padding: 40px;
-
-    background: rgba(16, 27, 45, 0.85);
-
-    border: 1px solid rgba(255,140,0,0.35);
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 0 25px rgba(255,140,0,0.15);
-
-}
-
-
-.tribute-content h1 {
-
-    text-align: center;
-
-    color: #ffd27f;
-
-    font-size: 34px;
-
-    font-weight: 600;
-
-    margin-bottom: 10px;
-
-}
-
-
-.tribute-content > p:first-of-type {
-
-    text-align: center;
-
-    color: #9bbf8a;
-
-    font-size: 20px;
-
-    font-style: italic;
-
-    margin-bottom: 35px;
-
-}
-
-
-.tribute-content h2 {
-
-    color: #ff8c00;
-
-    font-size: 24px;
-
-    font-weight: 500;
-
-    margin-bottom: 25px;
-
-}
-
-
-.tribute-content p {
-
-    color: #e6edf3;
-
-    font-size: 18px;
-
-    line-height: 1.8;
-
-    margin-bottom: 22px;
-
-}
-
-
-.tribute-content p:last-child {
-
-    text-align: center;
-
-    color: #9bbf8a;
-
-    font-style: italic;
-
-    font-size: 20px;
-
-}
-/* =========================
-   Homepage Content Cards
+   Homepage Cards
 ========================= */
 
 .home-content {
 
-    max-width: 1100px;
+    max-width:1100px;
 
-    margin: 50px auto;
-
-    display: grid;
-
-    gap: 25px;
+    margin:50px auto;
 
 }
 
-
-/* Welcome Section */
 
 .home-content h1 {
 
-    grid-column: 1 / -1;
+    text-align:center;
 
-    text-align: center;
+    color:#ffb347;
 
-    color: #ffb347;
+    font-size:38px;
 
-    font-size: 38px;
-
-    margin-bottom: 5px;
-
-}
-
-
-/* Card Sections */
-
-.home-content h2,
-.home-content p,
-.home-content ul {
-
-    background: rgba(16, 27, 45, 0.85);
-
-    border-left: 3px solid #ff8c00;
-
-    padding: 25px;
+    margin-bottom:30px;
 
 }
 
 
 .home-content h2 {
 
-    color: #ff8c00;
+    color:#ff8c00;
 
-    font-size: 26px;
+    background:rgba(16,27,45,.85);
 
-    margin-top: 20px;
+    border-left:3px solid #ff8c00;
 
-    margin-bottom: -25px;
+    padding:20px;
 
-    border-radius: 14px 14px 0 0;
+    margin-top:30px;
 
-}
-
-
-.home-content p {
-
-    color: #e6edf3;
-
-    font-size: 18px;
-
-    line-height: 1.7;
-
-    border-radius: 0 0 14px 14px;
+    border-radius:14px 14px 0 0;
 
 }
 
 
+.home-content p,
 .home-content ul {
 
-    color: #e6edf3;
+    background:rgba(16,27,45,.85);
 
-    padding-left: 50px;
+    padding:25px;
 
-    border-radius: 14px;
+    border-radius:0 0 14px 14px;
+
+    line-height:1.7;
+
+    font-size:18px;
 
 }
 
 
 .home-content li {
 
-    margin-bottom: 12px;
-
-    line-height: 1.5;
+    margin-bottom:12px;
 
 }
 
 
-/* Links */
-
-.home-content a {
-
-    color: #ffd27f;
-
-    text-decoration: none;
-
-}
-
-
-.home-content a:hover {
-
-    color: #ffffff;
-
-}
-
-
-/* Discord Button */
+/* Discord */
 
 .discord-button {
 
-    display: inline-block;
+    display:inline-block;
 
-    background: #5865F2;
+    background:#5865F2;
 
-    color: white !important;
+    color:white!important;
 
-    padding: 14px 28px;
+    padding:14px 24px;
 
-    border-radius: 12px;
+    border-radius:12px;
 
-    font-size: 18px;
-
-    font-weight: bold;
+    font-weight:bold;
 
 }
+
 
 
 /* =========================
-   Mobile Homepage
+   Tribute Card
 ========================= */
 
-@media (max-width: 768px) {
+.tribute-content {
 
+    max-width:900px;
 
-    .home-content {
+    margin:50px auto;
 
-        width: 95%;
+    padding:40px;
 
-        margin: 30px auto;
+    background:rgba(16,27,45,.85);
 
-        gap: 15px;
+    border:1px solid rgba(255,140,0,.35);
 
-    }
-
-
-    .home-content h1 {
-
-        font-size: 30px;
-
-    }
-
-
-    .home-content h2 {
-
-        font-size: 22px;
-
-        padding: 18px;
-
-    }
-
-
-    .home-content p,
-    .home-content ul {
-
-        padding: 18px;
-
-        font-size: 16px;
-
-    }
-
-
-    .home-content ul {
-
-        padding-left: 35px;
-
-    }
+    border-radius:18px;
 
 }
+
+
+.tribute-content h1 {
+
+    text-align:center;
+
+    color:#ffd27f;
+
+}
+
+
+.tribute-content p {
+
+    line-height:1.8;
+
+    font-size:18px;
+
+    margin-bottom:20px;
+
+}
+
+
 
 /* =========================
-   Discord Button
+   Mobile
 ========================= */
 
-.discord-button {
+@media(max-width:768px){
 
-    display: inline-block;
 
-    padding: 14px 24px;
+.logo img {
 
-    background: #5865F2;
-
-    color: #ffffff !important;
-
-    border-radius: 12px;
-
-    font-size: 18px;
-
-    font-weight: 600;
-
-    transition: 0.25s ease;
+    width:180px;
 
 }
 
 
-.discord-button:hover {
+.menu-toggle {
 
-    background: #7289da;
+    display:block;
 
-    transform: translateY(-2px);
+    margin-bottom:15px;
+
+}
+
+
+.navbar {
+
+    flex-direction:column;
+
+}
+
+
+.nav-links {
+
+    display:none;
+
+    width:100%;
+
+    flex-direction:column;
+
+}
+
+
+.nav-links.active {
+
+    display:flex;
+
+}
+
+
+.nav-links a {
+
+    font-size:16px;
+
+}
+
+
+.home-content {
+
+    width:95%;
+
+}
+
+
+.home-content h1 {
+
+    font-size:30px;
+
+}
+
+
+.home-content p,
+.home-content ul {
+
+    font-size:16px;
+
+    padding:18px;
+
+}
 
 }
