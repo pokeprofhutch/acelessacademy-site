@@ -20,14 +20,14 @@ body {
 }
 /* Navigation Bar */
 .navbar {
-    min-height: 130px;
+    min-height: 110px;
     padding: 10px 0;
 }
 
 /* Logo */
 .logo img {
-    width: 180px;
-    height: auto;
+    height: 90px;
+    width: auto;
 }
 
 /* Navigation Links */
