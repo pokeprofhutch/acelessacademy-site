@@ -16,6 +16,624 @@
 body {
 
     background:
+        linear-gradient(
+            180deg,
+            #18253b 0%,
+            #0b0f14 40%,
+            #05070a 100%
+        );
+
+    color: #e6edf3;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================
+   Container
+========================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================
+   Logo
+========================= */
+
+.logo {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 40px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.logo img {
+
+    width: 300px;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+
+
+
+/* =========================
+   Main Navigation
+========================= */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.nav-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    list-style: none;
+
+    padding: 18px 28px;
+
+
+    background: #192841;
+
+
+    border: 2px solid #ff8c00;
+
+
+    border-radius: 22px;
+
+
+    box-shadow:
+
+        0 0 20px rgba(255,140,0,.45),
+
+        0 0 50px rgba(255,140,0,.20);
+
+}
+
+
+
+
+.nav-links a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    transition: .25s ease;
+
+}
+
+
+
+.nav-links a:hover {
+
+    background: rgba(255,140,0,.25);
+
+    color: #ffd27f;
+
+}
+
+
+
+
+/* Basil Tribute */
+
+.nav-links a[href="tribute.html"] {
+
+    color: #9bbf8a;
+
+}
+
+
+
+.nav-links a[href="tribute.html"]:hover {
+
+    background: rgba(155,191,138,.20);
+
+    color: #d9edcc;
+
+}
+
+
+
+
+
+/* =========================
+   Mobile Menu Button
+========================= */
+
+.menu-toggle {
+
+    display: none;
+
+    background: #192841;
+
+    color: #ff8c00;
+
+    border: 2px solid #ff8c00;
+
+    border-radius: 10px;
+
+    padding: 8px 14px;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+/* =========================
+   Homepage Cards
+========================= */
+
+
+.home-content {
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    display: grid;
+
+    gap: 25px;
+
+}
+
+
+
+.home-card {
+
+
+    background:
+
+        rgba(16,27,45,.95);
+
+
+    border: 1px solid rgba(255,140,0,.35);
+
+
+    border-radius: 18px;
+
+
+    padding: 35px;
+
+
+
+    box-shadow:
+
+        0 0 20px rgba(0,0,0,.35);
+
+}
+
+
+
+
+
+.home-card h1 {
+
+
+    text-align: center;
+
+
+    color: #ffb347;
+
+
+    font-size: 38px;
+
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.home-card h2 {
+
+
+    color: #ff8c00;
+
+
+    font-size: 28px;
+
+
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+.home-card p {
+
+
+    color: #e6edf3;
+
+
+    font-size: 18px;
+
+
+    line-height: 1.7;
+
+}
+
+
+
+
+
+.home-card ul {
+
+
+    margin-top: 20px;
+
+
+    padding-left: 30px;
+
+}
+
+
+
+
+
+.home-card li {
+
+
+    margin-bottom: 12px;
+
+
+    line-height: 1.5;
+
+}
+
+
+
+
+/* =========================
+   Quick Links
+========================= */
+
+
+.home-card li a {
+
+
+    display: inline-block;
+
+
+    color: #ffd27f;
+
+
+    text-decoration: none;
+
+
+    background: #192841;
+
+
+    border: 1px solid rgba(255,140,0,.45);
+
+
+    padding: 10px 16px;
+
+
+    border-radius: 10px;
+
+
+}
+
+
+
+.home-card li a:hover {
+
+
+    background: #243957;
+
+
+    color: white;
+
+
+}
+
+
+
+
+
+/* =========================
+   Discord Button
+========================= */
+
+
+.discord-button {
+
+
+    display: inline-block;
+
+
+    margin-top: 20px;
+
+
+    background: #5865F2;
+
+
+    color: white !important;
+
+
+    padding: 16px 30px;
+
+
+    border-radius: 14px;
+
+
+    font-size: 18px;
+
+
+    font-weight: bold;
+
+
+
+    text-decoration: none;
+
+
+    box-shadow:
+
+        0 0 15px rgba(88,101,242,.45);
+
+}
+
+
+
+.discord-button:hover {
+
+
+    background: #7289da;
+
+
+}
+
+
+
+
+
+.join-community {
+
+
+    text-align: center;
+
+}
+
+
+
+
+
+/* =========================
+   Footer
+========================= */
+
+
+footer {
+
+
+    margin-top: 50px;
+
+    padding: 25px 0;
+
+    text-align: center;
+
+    color: #9aa7b5;
+
+}
+
+
+
+
+
+/* =========================
+   Mobile
+========================= */
+
+
+@media(max-width:768px){
+
+
+
+    .logo img {
+
+        width: 180px;
+
+    }
+
+
+
+    .navbar {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .menu-toggle {
+
+        display: block;
+
+        margin-bottom: 15px;
+
+    }
+
+
+
+    .nav-links {
+
+
+        display: none;
+
+
+        width: 100%;
+
+
+        flex-direction: column;
+
+
+        gap: 8px;
+
+
+    }
+
+
+
+
+    .nav-links.active {
+
+
+        display: flex;
+
+
+    }
+
+
+
+
+    .nav-links a {
+
+
+        font-size: 16px;
+
+
+        width: 100%;
+
+
+        text-align: center;
+
+
+    }
+
+
+
+
+    .home-content {
+
+
+        width: 95%;
+
+
+        margin: 30px auto;
+
+
+        gap: 18px;
+
+
+    }
+
+
+
+
+    .home-card {
+
+
+        padding: 22px;
+
+
+    }
+
+
+
+
+    .home-card h1 {
+
+
+        font-size: 30px;
+
+
+    }
+
+
+
+
+    .home-card h2 {
+
+
+        font-size: 22px;
+
+
+    }
+
+
+
+
+    .home-card p {
+
+
+        font-size: 16px;
+
+
+    }
+
+
+
+}/* =========================
+   Base Reset
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Site Base
+========================= */
+
+body {
+
+    background:
     radial-gradient(
         ellipse at top,
         #243957 0%,
