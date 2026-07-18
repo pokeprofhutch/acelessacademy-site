@@ -2197,3 +2197,89 @@ body {
     );
 
 }
+/* =========================
+   Content Links
+========================= */
+
+.tribute-content ul {
+
+    margin: 20px 0 30px;
+
+    padding-left: 25px;
+
+}
+
+
+.tribute-content li {
+
+    margin-bottom: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+
+.tribute-content li a {
+
+    color: #ffd27f;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .25s ease;
+
+}
+
+
+
+.tribute-content li a:hover {
+
+    color: #ffffff;
+
+    text-shadow:
+
+        0 0 8px rgba(255,140,0,.7);
+
+}
+
+
+
+/* =========================
+   Discord Button
+========================= */
+
+.discord-button {
+
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #5865F2;
+
+    color: #ffffff !important;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    box-shadow:
+
+        0 0 15px rgba(88,101,242,.35);
+
+    transition: .25s ease;
+
+}
+
+
+
+.discord-button:hover {
+
+    background: #7289da;
+
+    transform: translateY(-2px);
+
+}
