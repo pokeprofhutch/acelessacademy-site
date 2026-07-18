@@ -652,3 +652,127 @@ body {
     font-size: 20px;
 
 }
+/* =========================
+   Homepage Content
+========================= */
+
+.home-content {
+
+    max-width: 900px;
+
+    margin: 50px auto;
+
+}
+
+
+.home-content h1 {
+
+    text-align: center;
+
+    color: #ffb347;
+
+    font-size: 36px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+
+}
+
+
+.home-content h2 {
+
+    color: #ff8c00;
+
+    font-size: 26px;
+
+    font-weight: 500;
+
+    margin-top: 45px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.home-content p {
+
+    color: #e6edf3;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+.home-content ul {
+
+    margin: 20px 0 30px 35px;
+
+    color: #e6edf3;
+
+}
+
+
+.home-content li {
+
+    margin-bottom: 12px;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+}
+
+
+.home-content a {
+
+    color: #ffd27f;
+
+    text-decoration: none;
+
+}
+
+
+.home-content a:hover {
+
+    color: #ffffff;
+
+}
+
+
+/* =========================
+   Discord Button
+========================= */
+
+.discord-button {
+
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background: #5865F2;
+
+    color: #ffffff !important;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+
+}
+
+
+.discord-button:hover {
+
+    background: #7289da;
+
+    transform: translateY(-2px);
+
+}
