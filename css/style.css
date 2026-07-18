@@ -88,6 +88,29 @@ body {
 
     backdrop-filter: blur(10px);
 }
+/* Visible Navigation Panel */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    list-style: none;
+
+    padding: 18px 28px;
+
+    background: rgba(20, 28, 45, 0.90);
+
+    border: 2px solid rgba(0,229,255,0.35);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 0 20px rgba(0,229,255,0.25),
+        inset 0 0 20px rgba(0,229,255,0.05);
+}
 
 /* =========================
    Navigation Links
@@ -121,6 +144,40 @@ body {
 ========================= */
 .dropdown {
     position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    list-style: none;
+
+    min-width: 220px;
+
+    background: rgba(20,28,45,0.95);
+
+    border: 1px solid rgba(0,229,255,0.30);
+
+    border-radius: 14px;
+
+    padding: 10px 0;
+
+    box-shadow:
+        0 0 15px rgba(0,229,255,0.20);
+
+    z-index: 1000;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 18px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 /* =========================
