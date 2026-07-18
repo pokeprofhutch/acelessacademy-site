@@ -186,3 +186,16 @@ box-shadow:
         padding: 10px 14px;
     }
 }
+/* Basil Tribute Special Button */
+.nav-links li:last-child a {
+    color: #7CFF7C;
+}
+
+.nav-links li:last-child a:hover {
+    background: rgba(124,255,124,0.20);
+
+    color: #ffffff;
+
+    box-shadow:
+        0 0 12px rgba(124,255,124,0.45);
+}
