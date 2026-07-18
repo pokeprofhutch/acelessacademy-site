@@ -29,8 +29,9 @@ body {
 
 /* Logo */
 .logo img {
-    height: 80px;
-    width: auto;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
 }
 
 /* Navigation Links */
