@@ -1,1 +1,20 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Site Base */
+body {
+    background-color: #0b0f14;
+    color: #e6edf3;
+    font-family: Arial, sans-serif;
+}
+
+/* Centered Site Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
