@@ -2473,3 +2473,87 @@ body {
     }
 
 }
+/* =========================
+   Content Card Lists
+========================= */
+
+.content-card ul {
+
+    margin-top: 20px;
+
+    padding-left: 25px;
+
+}
+
+
+.content-card li {
+
+    margin-bottom: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================
+   Content Card Links
+========================= */
+
+.content-card li a {
+
+    display: inline-block;
+
+    color: #ffd27f;
+
+    text-decoration: none;
+
+    background: #192841;
+
+    border: 1px solid rgba(255,140,0,0.35);
+
+    border-radius: 10px;
+
+    padding: 8px 14px;
+
+    margin-right: 8px;
+
+    transition: .25s ease;
+
+}
+
+
+.content-card li a:hover {
+
+    background: rgba(255,140,0,0.25);
+
+    color: #ffffff;
+
+    border-color: #ff8c00;
+
+}
+
+
+
+/* =========================
+   Mobile Lists
+========================= */
+
+@media(max-width:768px){
+
+    .content-card ul {
+
+        padding-left: 20px;
+
+    }
+
+
+    .content-card li a {
+
+        display:block;
+
+        margin-bottom:8px;
+
+    }
+
+}
