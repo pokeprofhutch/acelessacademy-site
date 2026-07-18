@@ -561,3 +561,81 @@ body {
     }
 
 }
+/* =========================
+   Tribute Page Content
+========================= */
+
+.tribute-content {
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    background: #101b2d;
+
+    border: 1px solid rgba(255,140,0,0.35);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 20px rgba(255,140,0,0.15);
+
+}
+
+
+.tribute-content h1 {
+
+    text-align: center;
+
+    color: #ffd27f;
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.tribute-content h2 {
+
+    text-align: center;
+
+    color: #ff8c00;
+
+    font-size: 26px;
+
+    margin: 35px 0 20px;
+
+}
+
+
+.tribute-content p {
+
+    color: #e6edf3;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Tribute footer */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    padding: 25px;
+
+    color: #9aa7b5;
+
+    font-size: 14px;
+
+}
