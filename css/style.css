@@ -392,3 +392,172 @@ body {
 }
 
 }
+/* =========================
+   Improved Homepage Cards
+========================= */
+
+.home-content {
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    display: grid;
+
+    gap: 25px;
+
+}
+
+
+/* Every homepage section */
+
+.home-content section {
+
+    background:
+        rgba(16,27,45,0.95);
+
+    border:1px solid rgba(255,140,0,0.35);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.35);
+
+}
+
+
+/* Titles */
+
+.home-content h2 {
+
+    color:#ff8c00;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* Paragraphs */
+
+.home-content p {
+
+    color:#e6edf3;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+
+/* Lists */
+
+.home-content ul {
+
+    margin-top:20px;
+
+    padding-left:25px;
+
+}
+
+
+.home-content li {
+
+    margin-bottom:12px;
+
+    font-size:17px;
+
+}
+
+
+/* Quick Access links */
+
+.home-content li a {
+
+    display:inline-block;
+
+    background:#192841;
+
+    border:1px solid rgba(255,140,0,0.45);
+
+    padding:10px 16px;
+
+    border-radius:10px;
+
+    color:#ffd27f;
+
+    margin-bottom:5px;
+
+}
+
+
+.home-content li a:hover {
+
+    background:#243957;
+
+    color:white;
+
+}
+
+
+
+/* Discord Section */
+
+.join-community {
+
+    text-align:center;
+
+}
+
+
+.discord-button {
+
+    margin-top:20px;
+
+    display:inline-block;
+
+    background:#5865F2;
+
+    color:white !important;
+
+    padding:16px 30px;
+
+    border-radius:14px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 0 15px rgba(88,101,242,.45);
+
+}
+
+
+.discord-button:hover {
+
+    background:#7289da;
+
+}
+
+
+
+/* =========================
+   Better Background
+========================= */
+
+body {
+
+    background:
+    linear-gradient(
+        180deg,
+        #18253b 0%,
+        #0b0f14 35%,
+        #05070a 100%
+    );
+
+}
