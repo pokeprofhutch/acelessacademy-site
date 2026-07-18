@@ -2283,3 +2283,37 @@ body {
     transform: translateY(-2px);
 
 }
+/* =========================
+   Content Spacing Refinement
+========================= */
+
+.tribute-content h2 {
+
+    margin-top: 35px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.tribute-content p {
+
+    margin-bottom: 20px;
+
+}
+
+
+.tribute-content ul {
+
+    margin-bottom: 25px;
+
+}
+
+
+/* First heading should not have extra space */
+
+.tribute-content h1 + p {
+
+    margin-bottom: 35px;
+
+}
