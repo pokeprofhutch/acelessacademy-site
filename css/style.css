@@ -63,3 +63,33 @@ body {
         justify-content: center;
     }
 }
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Navigation Buttons */
+.nav-links a {
+    color: #e6edf3;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    background: rgba(0, 229, 255, 0.15);
+    color: #00e5ff;
+}
