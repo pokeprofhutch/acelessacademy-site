@@ -2317,3 +2317,159 @@ body {
     margin-bottom: 35px;
 
 }
+/* =========================
+   Standard Page Content
+========================= */
+
+.page-content {
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+}
+
+
+/* Page Title */
+
+.page-content h1 {
+
+    text-align: center;
+
+    color: #ffb347;
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Page Subtitle */
+
+.page-content .subtitle {
+
+    text-align: center;
+
+    color: #9bbf8a;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* Content Cards */
+
+.content-card {
+
+    background: rgba(16,27,45,0.90);
+
+    border: 1px solid rgba(255,140,0,0.35);
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.35);
+
+}
+
+
+/* Card Titles */
+
+.content-card h2 {
+
+    color: #ff8c00;
+
+    font-size: 26px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Card Text */
+
+.content-card p {
+
+    color: #e6edf3;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Remove extra space on last paragraph */
+
+.content-card p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================
+   Mobile Page Cards
+========================= */
+
+@media(max-width:768px){
+
+    .page-content {
+
+        width: 95%;
+
+        margin: 30px auto;
+
+    }
+
+
+    .page-content h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .page-content .subtitle {
+
+        font-size: 17px;
+
+    }
+
+
+    .content-card {
+
+        padding: 20px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .content-card h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .content-card p {
+
+        font-size: 16px;
+
+        line-height: 1.6;
+
+    }
+
+}
