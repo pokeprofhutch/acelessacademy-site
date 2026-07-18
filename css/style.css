@@ -23,9 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   min-height: 260px;
-    padding: 10px 0;
-}
+  }
 /* Logo */
 .logo {
     display: flex;
@@ -44,29 +42,6 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-}
-@media (max-width: 768px) {
-    .logo img {
-        width: 180px;
-    }
-
-    .nav-links {
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -76,6 +51,8 @@ body {
     list-style: none;
     gap: 40px;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Navigation Buttons */
@@ -88,8 +65,16 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Hover Effect */
 .nav-links a:hover {
     background: rgba(0, 229, 255, 0.15);
     color: #00e5ff;
+}
+@media (max-width: 768px) {
+    .logo img {
+        width: 180px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
 }
