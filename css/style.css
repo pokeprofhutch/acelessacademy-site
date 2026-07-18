@@ -655,3 +655,95 @@ footer {
     }
 
 }
+/* =========================
+   SUB NAVIGATION
+   How To Play / Tournaments
+========================= */
+
+.sub-navbar {
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.sub-nav-links {
+
+    list-style:none;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:15px 22px;
+
+    background:#192841;
+
+    border:2px solid #ff8c00;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 0 20px rgba(255,140,0,.35);
+
+}
+
+
+.sub-nav-links a {
+
+    display:block;
+
+    color:#ffd27f;
+
+    text-decoration:none;
+
+    background:#101b2d;
+
+    border:1px solid rgba(255,140,0,.35);
+
+    border-radius:10px;
+
+    padding:10px 16px;
+
+    transition:.25s ease;
+
+}
+
+
+.sub-nav-links a:hover {
+
+    background:rgba(255,140,0,.25);
+
+    color:white;
+
+}
+
+
+/* Mobile Sub Navigation */
+
+@media(max-width:768px){
+
+    .sub-nav-links {
+
+        width:100%;
+
+        flex-direction:column;
+
+    }
+
+
+    .sub-nav-links a {
+
+        text-align:center;
+
+    }
+
+}
