@@ -653,29 +653,50 @@ body {
 
 }
 /* =========================
-   Homepage Content
+   Homepage Content Cards
 ========================= */
 
 .home-content {
 
-    max-width: 900px;
+    max-width: 1100px;
 
     margin: 50px auto;
+
+    display: grid;
+
+    gap: 25px;
 
 }
 
 
+/* Welcome Section */
+
 .home-content h1 {
+
+    grid-column: 1 / -1;
 
     text-align: center;
 
     color: #ffb347;
 
-    font-size: 36px;
+    font-size: 38px;
 
-    font-weight: 600;
+    margin-bottom: 5px;
 
-    margin-bottom: 15px;
+}
+
+
+/* Card Sections */
+
+.home-content h2,
+.home-content p,
+.home-content ul {
+
+    background: rgba(16, 27, 45, 0.85);
+
+    border-left: 3px solid #ff8c00;
+
+    padding: 25px;
 
 }
 
@@ -686,11 +707,11 @@ body {
 
     font-size: 26px;
 
-    font-weight: 500;
+    margin-top: 20px;
 
-    margin-top: 45px;
+    margin-bottom: -25px;
 
-    margin-bottom: 18px;
+    border-radius: 14px 14px 0 0;
 
 }
 
@@ -701,18 +722,20 @@ body {
 
     font-size: 18px;
 
-    line-height: 1.8;
+    line-height: 1.7;
 
-    margin-bottom: 20px;
+    border-radius: 0 0 14px 14px;
 
 }
 
 
 .home-content ul {
 
-    margin: 20px 0 30px 35px;
-
     color: #e6edf3;
+
+    padding-left: 50px;
+
+    border-radius: 14px;
 
 }
 
@@ -721,12 +744,12 @@ body {
 
     margin-bottom: 12px;
 
-    font-size: 17px;
-
-    line-height: 1.6;
+    line-height: 1.5;
 
 }
 
+
+/* Links */
 
 .home-content a {
 
@@ -743,6 +766,79 @@ body {
 
 }
 
+
+/* Discord Button */
+
+.discord-button {
+
+    display: inline-block;
+
+    background: #5865F2;
+
+    color: white !important;
+
+    padding: 14px 28px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   Mobile Homepage
+========================= */
+
+@media (max-width: 768px) {
+
+
+    .home-content {
+
+        width: 95%;
+
+        margin: 30px auto;
+
+        gap: 15px;
+
+    }
+
+
+    .home-content h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .home-content h2 {
+
+        font-size: 22px;
+
+        padding: 18px;
+
+    }
+
+
+    .home-content p,
+    .home-content ul {
+
+        padding: 18px;
+
+        font-size: 16px;
+
+    }
+
+
+    .home-content ul {
+
+        padding-left: 35px;
+
+    }
+
+}
 
 /* =========================
    Discord Button
