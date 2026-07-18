@@ -20,11 +20,13 @@ body {
 }
 /* Navigation Bar */
 .navbar {
-    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
     padding: 10px 0;
 }
 
-/* Logo */
 .logo img {
     height: 120px;
     width: auto;
