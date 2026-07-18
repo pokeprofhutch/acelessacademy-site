@@ -18,3 +18,35 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 65px;
+    padding: 10px 0;
+    border-bottom: 1px solid #1e90ff;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #e6edf3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #00e5ff;
+}
