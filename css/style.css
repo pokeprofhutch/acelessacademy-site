@@ -23,14 +23,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 65px;
+    min-height: 90px;
     padding: 10px 0;
-    border-bottom: 1px solid #1e90ff;
 }
 
 /* Logo */
 .logo img {
-    height: 150px;
+    height: 80px;
     width: auto;
 }
 
