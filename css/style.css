@@ -747,3 +747,21 @@ footer {
     }
 
 }
+.news-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.news-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+.news-entry h2 {
+    margin-top: 0;
+}
