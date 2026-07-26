@@ -122,7 +122,8 @@ by Rubis, July 2026
 
 <img src="../assets/decks/powerfulhandalakazam.jpg"
 alt="Powerful Hand Alakazam Deck"
-class="deck-image">
+class="deck-image"
+onclick="openImage(this.src)">
 
 
 
@@ -284,7 +285,31 @@ navLinks.classList.toggle("active");
 
 </script>
 
+<div id="image-modal" class="image-modal" onclick="closeImage()">
 
+<img id="expanded-image" class="expanded-image">
+
+</div>
+
+
+<script>
+
+function openImage(src) {
+
+document.getElementById("image-modal").style.display = "flex";
+
+document.getElementById("expanded-image").src = src;
+
+}
+
+
+function closeImage() {
+
+document.getElementById("image-modal").style.display = "none";
+
+}
+
+</script>
 
 </body>
 
