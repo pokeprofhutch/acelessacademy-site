@@ -121,7 +121,8 @@ by Sip3s, July 2026
 
 <img src="../assets/decks/unforgivingunfezant.jpg"
 alt="The Unforgiving Unfezant Deck"
-class="deck-image">
+class="deck-image"
+onclick="openImage(this.src)">
 
 <h2>
 Overview
@@ -271,7 +272,31 @@ navLinks.classList.toggle("active");
 
 </script>
 
+<div id="image-modal" class="image-modal" onclick="closeImage()">
 
+<img id="expanded-image" class="expanded-image">
+
+</div>
+
+
+<script>
+
+function openImage(src) {
+
+document.getElementById("image-modal").style.display = "flex";
+
+document.getElementById("expanded-image").src = src;
+
+}
+
+
+function closeImage() {
+
+document.getElementById("image-modal").style.display = "none";
+
+}
+
+</script>
 
 </body>
 
